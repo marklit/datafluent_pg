@@ -73,7 +73,7 @@ Clone fivethirtyeight's data repo. It has a large number of CSV-formatted datase
 $ git clone https://github.com/fivethirtyeight/data.git ~/538data
 ```
 
-Make sure you can access a PostgreSQL database on your machine. Here I'm creating an 'intel' database for the 'mark' user on my Ubuntu 20 machine.
+Make sure you can access a PostgreSQL database on your machine. Here I'm creating an ``intel`` database for the ``mark`` user on my Ubuntu 20 machine.
 
 ```bash
 $ sudo -u postgres \
@@ -82,7 +82,7 @@ $ sudo -u postgres \
                        SUPERUSER;\""
 ```
 
-With access setup, create a database called ``intel``.
+With PostgreSQL access setup, create a database called ``intel``.
 
 ```bash
 $ createdb intel
