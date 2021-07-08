@@ -92,7 +92,7 @@ def build_metrics(engine, writer):
     get_counts_sql = '''
         SELECT table_schema,
                table_name,
-               (xpath('/row/cnt/text()', xml_num_rows))[1]::text::int
+               (XPATH('/row/cnt/text()', xml_num_rows))[1]::text::int
                     AS num_rows,
                num_columns,
                num_bytes
