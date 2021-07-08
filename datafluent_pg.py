@@ -6,7 +6,7 @@ To run the script:
 $ python3 datafluent_pg.py
 '''
 
-from humanfriendly import format_size
+from   humanfriendly import format_size
 import pandas as pd
 from   sqlalchemy import create_engine
 import typer
@@ -145,13 +145,17 @@ def build_metrics(engine, writer):
 
     return writer
 
+
 def main(pg_dns='postgresql://localhost:5432/intel',
          output='fluency.xlsx'):
     engine = create_engine(pg_dns)
     writer = pd.ExcelWriter(output, engine='xlsxwriter')
+
     writer = build_metrics(engine, writer)
     writer = build_month_distributions(engine, writer)
+
     writer.save()
+
 
 if __name__ == "__main__":
     typer.run(main)
