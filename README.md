@@ -58,6 +58,13 @@ $ python3 -m pip install \
     xlsxwriter
 ```
 
+Then clone this repo as it contains the ``datafluent_pg.py`` script:
+
+```bash
+$ git clone https://github.com/marklit/datafluent_pg.git ~/datafluent_pg
+$ cd ~/datafluent_pg
+```
+
 ### Example Analysis
 
 Clone fivethirtyeight's data repo. It has a large number of CSV-formatted datasets.
