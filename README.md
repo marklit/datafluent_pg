@@ -1,5 +1,7 @@
 # Data Fluent for PostgreSQL
 
+Build a better understanding of your data in PostgreSQL.
+
 ![An Example Resulting Report in Excel](example.png)
 
 ## Installation
