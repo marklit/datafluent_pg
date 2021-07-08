@@ -2,7 +2,9 @@
 
 Build a better understanding of your data in PostgreSQL.
 
-![An Example Resulting Report in Excel](example.png)
+![The Metrics Report](example.png)
+
+![The Time Distribution Report](example2.png)
 
 ## Installation
 
