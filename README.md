@@ -24,12 +24,13 @@ $ echo "deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main" \
     | sudo tee /etc/apt/sources.list.d/pgdg.list
 
 $ sudo apt update
-$ sudo apt install git \
-                 python3-pip \
-                 python3-virtualenv \
-                 postgresql-13 \
-                 postgresql-client-13 \
-                 postgresql-contrib
+$ sudo apt install \
+    git \
+    python3-pip \
+    python3-virtualenv \
+    postgresql-13 \
+    postgresql-client-13 \
+    postgresql-contrib
 ```
 
 On macOS:
@@ -40,6 +41,8 @@ $ brew install \
     postgresql \
     virtualenv
 ```
+
+Then, regardless of platform, setup a virtual environment and install the following Python-based dependencies.
 
 ```
 $ virtualenv ~/.fluency
