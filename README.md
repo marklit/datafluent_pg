@@ -80,6 +80,11 @@ $ sudo -u postgres \
     bash -c "psql -c \"CREATE USER mark
                        WITH PASSWORD 'test'
                        SUPERUSER;\""
+```
+
+With access setup, create a database called ``intel``.
+
+```bash
 $ createdb intel
 ```
 
