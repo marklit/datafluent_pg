@@ -27,6 +27,7 @@ On macOS:
 ```
 $ brew install \
     git \
+    postgresql \
     virtualenv
 ```
 
