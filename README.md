@@ -54,7 +54,7 @@ $ python3 -m pip install datafluent
 
 ## Example Analysis
 
-Clone fivethirtyeight's data repo. It has a large number of CSV-formatted datasets.
+Clone fivethirtyeight's [data repospitory](https://data.fivethirtyeight.com/). It has a large number of CSV-formatted datasets they've used for some of their articles and graphics.
 
 ```bash
 $ git clone https://github.com/fivethirtyeight/data.git ~/538data
