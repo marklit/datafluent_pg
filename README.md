@@ -1,6 +1,6 @@
 # Data Fluent for PostgreSQL
 
-[![Documentation Status](https://readthedocs.org/projects/ihan/badge/?version=latest)](http://ihan.readthedocs.io/en/latest/)
+[![Documentation Status](https://readthedocs.org/projects/datafluent/badge/?version=latest)](http://datafluent.readthedocs.io/en/latest/)
 [![license](http://img.shields.io/badge/license-MIT-red.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/datafluent.svg)](https://pypi.org/project/datafluent/)
 
