@@ -101,7 +101,7 @@ $ datafluent_pg --help
 Usage: datafluent [OPTIONS]
 
 Options:
-  --pg-dns TEXT                   [default: postgresql://localhost:5432/intel]
+  --dns TEXT                      [default: postgresql://localhost:5432/intel]
   --output TEXT                   [default: fluency.xlsx]
   --install-completion [bash|zsh|fish|powershell|pwsh]
                                   Install completion for the specified shell.

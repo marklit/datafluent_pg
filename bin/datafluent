@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-'''
-To run the script:
-
-$ python3 datafluent_pg.py
-'''
-
 from   humanfriendly import format_size
 import pandas as pd
 from   sqlalchemy import create_engine
@@ -135,7 +129,7 @@ def build_metrics(engine, writer):
         writer.sheets[sheet_name]\
               .conditional_format(range_, {'type': '3_color_scale'})
 
-    # Format large numbers
+    # Format large numbers, set column widths, etc..
     nice_numbers = writer.book.add_format({'num_format': '#,##0'})
     right_align  = writer.book.add_format({'align': 'right'})
 
