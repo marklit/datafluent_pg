@@ -13,3 +13,5 @@ deploy:
 	rm -fr dist/* || true
 	git commit -am'Version bump'
 	git push -u origin main
+	git tag -a $(cat VERSION) -m "Release v$(cat VERSION)" main
+	git push --tags
