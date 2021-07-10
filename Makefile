@@ -12,5 +12,5 @@ deploy:
 	python3 -m twine upload dist/*
 	rm -fr dist/* || true
 	git commit -am'Version bump'
-	git push -u origin main
+	git push
 	bash -x version.sh
