@@ -1,1 +1,2 @@
+include docs/*.rst
 include VERSION

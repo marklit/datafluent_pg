@@ -90,7 +90,7 @@ I'll run the Excel Report Generator:
 $ datafluent_pg
 ```
 
-This will result in a ```fluency.xlsx``` file being produced with two worksheets: ```Metrics``` and ```Time Distributions```.
+The above will connect to ```postgresql://localhost:5432/intel``` by default and will produce a ```fluency.xlsx``` file  with two worksheets: ```Metrics``` and ```Time Distributions```.
 
 If you need to override any parameters, please refer to the documentation:
 
@@ -102,7 +102,7 @@ $ datafluent_pg --help
 Usage: datafluent [OPTIONS]
 
 Options:
-  --dns TEXT                      [default: postgresql://localhost:5432/intel]
+  --url TEXT                      [default: postgresql://localhost:5432/intel]
   --output TEXT                   [default: fluency.xlsx]
   --install-completion [bash|zsh|fish|powershell|pwsh]
                                   Install completion for the specified shell.
