@@ -9,5 +9,4 @@ test:
 deploy:
 	python -c 'x = open("VERSION", "r").read().split("."); open("VERSION", "w").write(x[0] + "." + x[1] + "." + str(int(x[2])+1))'
 	python3 -m build
-	python3 -m twine upload --repository testpypi dist/*
-
+	python3 -m twine upload dist/*
