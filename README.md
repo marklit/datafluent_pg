@@ -78,6 +78,7 @@ $ createdb intel
 I'll import one of the datasets within fivethirtyeight's repo. Note, because the dates within this dataset are not formatted in ```YYYY-MM-DD``` format, I needed to override the format so that the ```MM/DD/YYYY``` format would be read properly.
 
 ```bash
+$ python3 -m pip install csvkit
 $ csvsql --db postgresql:///intel \
          --insert ~/538data/congress-generic-ballot/generic_topline_historical.csv \
          --datetime-format="%m/%d/%Y"
