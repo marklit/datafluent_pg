@@ -79,9 +79,9 @@ There are a few dependencies for csvkit that are required to be installed ahead 
 To install Ubuntu 20's dependencies for csvkit run:
 
 ```bash
-    $ sudo apt-get install \
-        libicu-dev \
-        pkg-config
+$ sudo apt-get install \
+    libicu-dev \
+    pkg-config
 ```
 
 To install macOS's dependencies for csvkit run:
