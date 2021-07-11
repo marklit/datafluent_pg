@@ -53,7 +53,7 @@ $ python3 -m pip install datafluent
 
 ## Example Analysis
 
-Clone FiveThirtyEight's [data repospitory](https://data.fivethirtyeight.com/). It has a large number of CSV-formatted datasets they've used for some of their articles and graphics.
+Clone FiveThirtyEight's [data repository](https://data.fivethirtyeight.com/). It has a large number of CSV-formatted datasets they've used for some of their articles and graphics.
 
 ```bash
 $ git clone https://github.com/fivethirtyeight/data.git ~/538data
@@ -76,7 +76,7 @@ $ createdb intel
 
 There are a few dependencies for csvkit that are required to be installed ahead of time.
 
-To install Ubuntu 20's depenncies for csvkit run:
+To install Ubuntu 20's dependencies for csvkit run:
 
 ```bash
     $ sudo apt-get install \
@@ -84,7 +84,7 @@ To install Ubuntu 20's depenncies for csvkit run:
         pkg-config
 ```
 
-To install macOS's depenncies for csvkit run:
+To install macOS's dependencies for csvkit run:
 
 ```bash
 $ brew install icu4c
