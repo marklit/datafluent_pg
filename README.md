@@ -60,7 +60,7 @@ Clone FiveThirtyEight's [data repospitory](https://data.fivethirtyeight.com/). I
 $ git clone https://github.com/fivethirtyeight/data.git ~/538data
 ```
 
-Make sure you can access a PostgreSQL database on your machine. Here I'm creating an ``intel`` database for the ``mark`` user on my Ubuntu 20 machine.
+Make sure you can access a PostgreSQL database on your machine. Below I'll grant access to my account on my Ubuntu 20 machine. Please adjust the username and password for your system.
 
 ```bash
 $ sudo -u postgres \
@@ -69,13 +69,13 @@ $ sudo -u postgres \
                        SUPERUSER;\""
 ```
 
-With PostgreSQL access setup, create a database called ``intel``.
+With access setup, I've created a PostgreSQL database called ``intel``.
 
 ```bash
 $ createdb intel
 ```
 
-I'll import one of the datasets within fivethirtyeight's repo. Note, because the dates within this dataset are not formatted in ```YYYY-MM-DD``` format, I needed to override the format so that the ```MM/DD/YYYY``` format would be read properly.
+I'll import one of the datasets within FiveThirtyEight's repo. Note, because the dates within this dataset are not formatted in ```YYYY-MM-DD``` format, I needed to override the format so that the ```MM/DD/YYYY``` format would be read properly.
 
 ```bash
 $ python3 -m pip install csvkit
