@@ -141,7 +141,7 @@ def build_metrics(engine, writer):
     return writer
 
 
-def main(url='postgresql://localhost:5432/intel',
+def main(url='postgresql:///intel',
          output='fluency.xlsx'):
     engine = create_engine(url)
     writer = pd.ExcelWriter(output, engine='xlsxwriter')
