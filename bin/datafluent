@@ -115,7 +115,8 @@ def build_metrics(engine, writer):
     df = pd.read_sql_query(get_counts_sql, con=engine)
 
     # Add an extra column with the byte count in human-readable form
-    df['human_size'] = df.apply(lambda row: format_size(row['num_bytes']),
+    df['human_size'] = df.apply(lambda row: format_size(row['num_bytes'],
+                                                        binary=True),
                                 axis=1)
 
     df.to_excel(writer, sheet_name=sheet_name, index=False)
