@@ -107,7 +107,7 @@ $ csvsql --db postgresql:///intel \
 I'll then run Data Fluent which will generate a report in Excel format.
 
 ```bash
-$ datafluent
+$ datafluent --url postgresql:///intel
 ```
 
 The above will produce a ```fluency.xlsx``` file with two worksheets: ```Metrics``` and ```Time Distributions```.
